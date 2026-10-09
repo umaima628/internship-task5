@@ -1,0 +1,124 @@
+/* Reset some default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main To-Do container */
+.todo-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input and button area */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Text input */
+#taskInput {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+/* Add button */
+#addButton {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #007bff;
+    color: white;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Add button hover effect */
+#addButton:hover {
+    background-color: #0056b3;
+}
+
+/* Remove bullet points from the list */
+#taskList {
+    list-style: none;
+}
+
+/* Individual task */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    background-color: #f8f9fa;
+    border-radius: 6px;
+
+    border: 1px solid #e0e0e0;
+}
+
+/* Task text */
+.task-text {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Completed task */
+.task-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 7px 10px;
+
+    cursor: pointer;
+}
+
+/* Delete button hover */
+.delete-button:hover {
+    background-color: #b02a37;
+}
